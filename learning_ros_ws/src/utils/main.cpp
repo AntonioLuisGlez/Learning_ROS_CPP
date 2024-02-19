@@ -1,13 +1,17 @@
-#include "learning_ros_cpp/markers_node.h"
-#include "memory"
+#include <memory>
 
-int main(int, char**)
+#include "learning_ros_cpp/markers_node.h"
+
+int main(int argc, char** argv)
 {
-    // catec::MarkersNode node;
+    ros::init(argc, argv, "markers_node");
+
     std::unique_ptr<catec::MarkersNode> node;
     node = std::make_unique<catec::MarkersNode>();
 
-    node->sayHello();
+    node->init();
+
+    ros::spin();
 
     return 0;
 }
