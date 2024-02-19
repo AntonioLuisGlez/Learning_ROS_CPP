@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_node.h
+
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/main.cpp
+learning_ros_cpp/markers_node.h
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/learning_ros_cpp/markers_node.h
+memory
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/memory
+

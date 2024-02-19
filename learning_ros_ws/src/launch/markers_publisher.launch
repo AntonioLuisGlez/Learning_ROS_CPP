@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="learning_ros_cpp" type="markers_node_main" name="markers_node_main" output="screen"/>
+</launch>
