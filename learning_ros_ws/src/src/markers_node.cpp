@@ -19,9 +19,9 @@ MarkersNode::MarkersNode() : nh_("~")
     marker_.pose.orientation.y = 0.0;
     marker_.pose.orientation.z = 0.0;
     marker_.pose.orientation.w = 1.0;
-    marker_.scale.x            = 1.0;
-    marker_.scale.y            = 1.0;
-    marker_.scale.z            = 1.0;
+    marker_.scale.x            = 0.5;
+    marker_.scale.y            = 0.5;
+    marker_.scale.z            = 0.5;
     marker_.color.r            = 1.0f;
     marker_.color.g            = 0.0f;
     marker_.color.b            = 0.0f;
@@ -33,12 +33,13 @@ MarkersNode::~MarkersNode() {}
 
 void MarkersNode::init()
 {
-    ros::Rate rate(1); // Frecuencia de publicación en Hz
+    ros::Rate rate(10); // Frecuencia de publicación en Hz
 
     while (ros::ok()) {
-        // Cambia la posición del marcador
+        /* Cambia la posición del marcador
         marker_.pose.position.x += 0.1;
         marker_.pose.position.y += 0.1;
+        */
 
         // Publica el marcador
         marker_pub_.publish(marker_);
