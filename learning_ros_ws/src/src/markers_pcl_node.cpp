@@ -100,4 +100,40 @@ void PointCloudGenerator::publishPointCloud(const pcl::PointCloud<pcl::PointXYZ>
     point_cloud_pub_.publish(cloud_msg);
 }
 
+CircularPathGenerator::CircularPathGenerator() : nh_("~")
+{
+    nh_.param("radius", radius_, 1.0);
+    nh_.param("angular_velocity", angular_velocity_, 0.1);
+    nh_.param("frame_id", frame_id_, std::string("odom"));
+    nh_.param("child_frame_id", child_frame_id_, std::string("base_link"));
+}
+
+void CircularPathGenerator::step()
+{
+    // Calcula la posición actual en la trayectoria circular
+    double current_angle = angular_velocity_ * ros::Time::now().toSec();
+    double x             = radius_ * cos(current_angle);
+    double y             = radius_ * sin(current_angle);
+
+    // Publica la transformación entre los marcos de referencia odom y base_link
+    publishTransform(x, y);
+}
+
+void CircularPathGenerator::publishTransform(double x, double y)
+{
+    geometry_msgs::TransformStamped transformStamped;
+    transformStamped.header.stamp            = ros::Time::now();
+    transformStamped.header.frame_id         = frame_id_;
+    transformStamped.child_frame_id          = child_frame_id_;
+    transformStamped.transform.translation.x = x;
+    transformStamped.transform.translation.y = y;
+    transformStamped.transform.translation.z = 0.0;
+    transformStamped.transform.rotation.x    = 0.0;
+    transformStamped.transform.rotation.y    = 0.0;
+    transformStamped.transform.rotation.z    = 0.0;
+    transformStamped.transform.rotation.w    = 1.0;
+
+    tf_broadcaster_.sendTransform(transformStamped);
+}
+
 } // namespace catec
