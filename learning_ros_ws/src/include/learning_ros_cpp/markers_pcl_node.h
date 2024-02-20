@@ -9,40 +9,48 @@
 
 namespace catec {
 
+// Class definition for MarkersNode
 class MarkersNode
 {
   public:
+    // Constructor and Destructor
     MarkersNode();
     ~MarkersNode();
 
+    // Initialize the node
     void init();
 
+    // Perform a step in the node's operation
     void step();
 
   private:
-    ros::NodeHandle            nh_;
-    ros::Publisher             marker_pub_;
-    visualization_msgs::Marker marker_;
+    ros::NodeHandle            nh_;         // ROS NodeHandle for the MarkersNode
+    ros::Publisher             marker_pub_; // ROS Publisher for markers
+    visualization_msgs::Marker marker_;     // Marker object for visualization
 };
 
+// Class definition for PointCloudGenerator
 class PointCloudGenerator
 {
   public:
+    // Constructor for PointCloudGenerator
     PointCloudGenerator();
 
+    // Method to perform a step
     void step();
 
   private:
-    ros::NodeHandle nh_;
-    ros::Publisher  point_cloud_pub_;
+    ros::NodeHandle nh_;              // ROS NodeHandle for the PointCloudGenerator
+    ros::Publisher  point_cloud_pub_; // ROS Publisher for point clouds
 
-    // Función para generar la nube de puntos
+    // Generate the point cloud
     pcl::PointCloud<pcl::PointXYZ>::Ptr generatePointCloud();
 
-    // Función para publicar la nube de puntos
+    // Publish the generated point cloud
     void publishPointCloud(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud);
 
   private:
+    // Pointer to an object of type ROSMessageGenerator may be intended here
     // std::unique_ptr<ROSMessageGenerator> _msg_generator;
 };
 
