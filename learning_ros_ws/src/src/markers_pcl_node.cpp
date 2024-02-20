@@ -100,27 +100,32 @@ void PointCloudGenerator::publishPointCloud(const pcl::PointCloud<pcl::PointXYZ>
     point_cloud_pub_.publish(cloud_msg);
 }
 
+// Constructor for CircularPathGenerator, initializing with private namespace
 CircularPathGenerator::CircularPathGenerator() : nh_("~")
 {
+    // Retrieve parameters for radius, angular velocity, frame IDs
     nh_.param("radius", radius_, 1.0);
     nh_.param("angular_velocity", angular_velocity_, 0.1);
     nh_.param("frame_id", frame_id_, std::string("odom"));
     nh_.param("child_frame_id", child_frame_id_, std::string("base_link"));
 }
 
+// Function to compute the current position along the circular path
 void CircularPathGenerator::step()
 {
-    // Calcula la posición actual en la trayectoria circular
+    // Calculate the current position on the circular path
     double current_angle = angular_velocity_ * ros::Time::now().toSec();
     double x             = radius_ * cos(current_angle);
     double y             = radius_ * sin(current_angle);
 
-    // Publica la transformación entre los marcos de referencia odom y base_link
+    // Publish the transformation between the odom and base_link frames
     publishTransform(x, y);
 }
 
+// Function to publish the transformation between frames
 void CircularPathGenerator::publishTransform(double x, double y)
 {
+    // Create a TransformStamped message
     geometry_msgs::TransformStamped transformStamped;
     transformStamped.header.stamp            = ros::Time::now();
     transformStamped.header.frame_id         = frame_id_;
@@ -133,6 +138,7 @@ void CircularPathGenerator::publishTransform(double x, double y)
     transformStamped.transform.rotation.z    = 0.0;
     transformStamped.transform.rotation.w    = 1.0;
 
+    // Broadcast the transform using tf_broadcaster_
     tf_broadcaster_.sendTransform(transformStamped);
 }
 

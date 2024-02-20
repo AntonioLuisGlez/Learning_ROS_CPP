@@ -58,23 +58,24 @@ class PointCloudGenerator
     // std::unique_ptr<ROSMessageGenerator> _msg_generator;
 };
 
+// Class definition for CircularPathGenerator
 class CircularPathGenerator
 {
   public:
-    CircularPathGenerator();
+    CircularPathGenerator(); // Constructor
 
-    // Método para generar y publicar la trayectoria circular
+    // Method to generate and publish the circular path
     void step();
 
   private:
-    ros::NodeHandle               nh_;
-    tf2_ros::TransformBroadcaster tf_broadcaster_;
-    double                        radius_;
-    double                        angular_velocity_;
-    std::string                   frame_id_;
-    std::string                   child_frame_id_;
+    ros::NodeHandle               nh_;               // ROS NodeHandle for CircularPathGenerator
+    tf2_ros::TransformBroadcaster tf_broadcaster_;   // TransformBroadcaster for TF2 messages
+    double                        radius_;           // Radius of the circular path
+    double                        angular_velocity_; // Angular velocity along the path
+    std::string                   frame_id_;         // Frame ID for the transformation
+    std::string                   child_frame_id_;   // Child frame ID for the transformation
 
-    // Método privado para publicar la transformación entre los sistemas de referencia odom y base_link
+    // Private method to publish the transformation between odom and base_link frames
     void publishTransform(double x, double y);
 };
 
