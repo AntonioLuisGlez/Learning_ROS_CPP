@@ -5,6 +5,7 @@
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/*.h")
 set(OLD_GLOB
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_node.h"
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/point_cloud_generator.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -15,6 +16,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/*.cpp")
 set(OLD_GLOB
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp"
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

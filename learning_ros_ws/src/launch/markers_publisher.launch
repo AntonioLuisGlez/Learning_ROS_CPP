@@ -1,5 +1,5 @@
 <launch>
-    <node pkg="learning_ros_cpp" type="markers_node_main" name="markers_node_main" output="screen"/>
+    <node pkg="learning_ros_cpp" type="marker_and_pointcloud_node_main" name="marker_and_pointcloud_node_main" output="screen"/>
 
     <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom" args="2 2 2 0 0 0 map odom"/>
     <node pkg="tf2_ros" type="static_transform_publisher" name="odom_to_base_link" args="0 0 0 0 0 0 odom base_link"/>

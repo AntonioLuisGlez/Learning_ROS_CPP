@@ -4,8 +4,15 @@ namespace catec {
 
 MarkersNode::MarkersNode() : nh_("~")
 {
-    marker_pub_ = nh_.advertise<visualization_msgs::Marker>("Marker_for_sensor1", 1);
+    /// \note: Here define and create the subscribers and publishers
 
+    marker_pub_ = nh_.advertise<visualization_msgs::Marker>("Marker_for_sensor1", 1);
+}
+
+MarkersNode::~MarkersNode() {}
+
+void MarkersNode::init()
+{
     marker_.header.frame_id    = "sensor1_frame";
     marker_.header.stamp       = ros::Time::now();
     marker_.ns                 = "basic_shapes";
@@ -29,24 +36,24 @@ MarkersNode::MarkersNode() : nh_("~")
     marker_.lifetime           = ros::Duration();
 }
 
-MarkersNode::~MarkersNode() {}
-
-void MarkersNode::init()
+void MarkersNode::step()
 {
-    ros::Rate rate(10); // Frecuencia de publicación en Hz
+    marker_pub_.publish(marker_);
 
-    while (ros::ok()) {
-        /* Cambia la posición del marcador
-        marker_.pose.position.x += 0.1;
-        marker_.pose.position.y += 0.1;
-        */
+    // ros::Rate rate(10); // Frecuencia de publicación en Hz
 
-        // Publica el marcador
-        marker_pub_.publish(marker_);
+    // while (ros::ok()) {
+    //     /* Cambia la posición del marcador
+    //     marker_.pose.position.x += 0.1;
+    //     marker_.pose.position.y += 0.1;
+    //     */
 
-        // Espera hasta la próxima iteración
-        rate.sleep();
-    }
+    //     // Publica el marcador
+    //     marker_pub_.publish(marker_);
+
+    //     // Espera hasta la próxima iteración
+    //     rate.sleep();
+    // }
 }
 
 } // namespace catec

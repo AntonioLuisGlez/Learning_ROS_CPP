@@ -13,6 +13,8 @@ class MarkersNode
 
     void init();
 
+    void step();
+
   private:
     ros::NodeHandle            nh_;
     ros::Publisher             marker_pub_;

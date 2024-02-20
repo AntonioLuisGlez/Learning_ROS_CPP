@@ -5,4 +5,4 @@ Description: Description of learning_ros_cpp
 Version: 1.0.0
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib -llearning_ros_cpp
-Requires: roscpp
+Requires: roscpp pcl_ros

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp" "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o"
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp" "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,6 +22,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/usr/include/eigen3"
+  "/usr/include/pcl-1.10"
+  "/usr/include/vtk-7.1"
+  "/usr/include/freetype2"
   )
 
 # Targets to which this target links.

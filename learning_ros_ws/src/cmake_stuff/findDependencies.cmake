@@ -22,12 +22,12 @@ message(STATUS "Using CMAKE_PREFIX_PATH - ${CMAKE_PREFIX_PATH}")
 # # Configuring catkin  ##
 # ########################
 find_package(catkin REQUIRED
-   COMPONENTS roscpp)
+   COMPONENTS roscpp pcl_ros)
 
 catkin_package(
    INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include
    LIBRARIES ${PROJECT_NAME}
-   CATKIN_DEPENDS roscpp
+   CATKIN_DEPENDS roscpp pcl_ros
 )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC ${catkin_LIBRARIES})
