@@ -4,8 +4,7 @@
 # HDRS_FILES at CMakeLists.txt:24 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/*.h")
 set(OLD_GLOB
-  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_node.h"
-  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/point_cloud_generator.h"
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_pcl_node.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -15,8 +14,7 @@ endif()
 # SRCS_FILES at CMakeLists.txt:25 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/*.cpp")
 set(OLD_GLOB
-  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp"
-  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp"
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

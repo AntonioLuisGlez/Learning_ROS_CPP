@@ -2,8 +2,7 @@
 
 #include <memory>
 
-#include "learning_ros_cpp/markers_node.h"
-#include "learning_ros_cpp/point_cloud_generator.h"
+#include "learning_ros_cpp/markers_pcl_node.h"
 
 int main(int argc, char** argv)
 {

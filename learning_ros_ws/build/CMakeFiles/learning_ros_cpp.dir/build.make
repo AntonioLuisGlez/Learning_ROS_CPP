@@ -57,42 +57,27 @@ include CMakeFiles/learning_ros_cpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learning_ros_cpp.dir/flags.make
 
-CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o: CMakeFiles/learning_ros_cpp.dir/flags.make
-CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o: /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o -c /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp
+CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o: CMakeFiles/learning_ros_cpp.dir/flags.make
+CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o: /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o -c /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp
 
-CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp > CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.i
+CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp > CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.i
 
-CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_node.cpp -o CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.s
-
-CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o: CMakeFiles/learning_ros_cpp.dir/flags.make
-CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o: /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o -c /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp
-
-CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp > CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.i
-
-CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/point_cloud_generator.cpp -o CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.s
+CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp -o CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.s
 
 # Object files for target learning_ros_cpp
 learning_ros_cpp_OBJECTS = \
-"CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o" \
-"CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o"
+"CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o"
 
 # External object files for target learning_ros_cpp
 learning_ros_cpp_EXTERNAL_OBJECTS =
 
-liblearning_ros_cpp.so: CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o
-liblearning_ros_cpp.so: CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o
+liblearning_ros_cpp.so: CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o
 liblearning_ros_cpp.so: CMakeFiles/learning_ros_cpp.dir/build.make
 liblearning_ros_cpp.so: /opt/ros/noetic/lib/libpcl_ros_filter.so
 liblearning_ros_cpp.so: /opt/ros/noetic/lib/libpcl_ros_tf.so
@@ -211,7 +196,7 @@ liblearning_ros_cpp.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 liblearning_ros_cpp.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 liblearning_ros_cpp.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 liblearning_ros_cpp.so: CMakeFiles/learning_ros_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library liblearning_ros_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library liblearning_ros_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learning_ros_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

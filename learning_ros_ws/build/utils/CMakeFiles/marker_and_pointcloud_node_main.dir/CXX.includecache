@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_node.h
-ros/ros.h
--
-visualization_msgs/Marker.h
--
-
-/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/point_cloud_generator.h
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_pcl_node.h
 pcl/point_cloud.h
 -
 pcl/point_types.h
@@ -23,16 +17,16 @@ ros/ros.h
 -
 sensor_msgs/PointCloud2.h
 -
+visualization_msgs/Marker.h
+-
 
 /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/main.cpp
 ros/ros.h
 -
 memory
 -
-learning_ros_cpp/markers_node.h
-/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/learning_ros_cpp/markers_node.h
-learning_ros_cpp/point_cloud_generator.h
-/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/learning_ros_cpp/point_cloud_generator.h
+learning_ros_cpp/markers_pcl_node.h
+/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/utils/learning_ros_cpp/markers_pcl_node.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

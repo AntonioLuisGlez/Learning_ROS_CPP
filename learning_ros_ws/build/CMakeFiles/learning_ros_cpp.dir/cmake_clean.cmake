@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o"
-  "CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o"
+  "CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o"
   "liblearning_ros_cpp.pdb"
   "liblearning_ros_cpp.so"
 )

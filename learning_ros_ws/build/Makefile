@@ -1325,59 +1325,32 @@ marker_and_pointcloud_node_main/fast:
 	$(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build
 .PHONY : marker_and_pointcloud_node_main/fast
 
-src/markers_node.o: src/markers_node.cpp.o
+src/markers_pcl_node.o: src/markers_pcl_node.cpp.o
 
-.PHONY : src/markers_node.o
-
-# target to build an object file
-src/markers_node.cpp.o:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.o
-.PHONY : src/markers_node.cpp.o
-
-src/markers_node.i: src/markers_node.cpp.i
-
-.PHONY : src/markers_node.i
-
-# target to preprocess a source file
-src/markers_node.cpp.i:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.i
-.PHONY : src/markers_node.cpp.i
-
-src/markers_node.s: src/markers_node.cpp.s
-
-.PHONY : src/markers_node.s
-
-# target to generate assembly for a file
-src/markers_node.cpp.s:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_node.cpp.s
-.PHONY : src/markers_node.cpp.s
-
-src/point_cloud_generator.o: src/point_cloud_generator.cpp.o
-
-.PHONY : src/point_cloud_generator.o
+.PHONY : src/markers_pcl_node.o
 
 # target to build an object file
-src/point_cloud_generator.cpp.o:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.o
-.PHONY : src/point_cloud_generator.cpp.o
+src/markers_pcl_node.cpp.o:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o
+.PHONY : src/markers_pcl_node.cpp.o
 
-src/point_cloud_generator.i: src/point_cloud_generator.cpp.i
+src/markers_pcl_node.i: src/markers_pcl_node.cpp.i
 
-.PHONY : src/point_cloud_generator.i
+.PHONY : src/markers_pcl_node.i
 
 # target to preprocess a source file
-src/point_cloud_generator.cpp.i:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.i
-.PHONY : src/point_cloud_generator.cpp.i
+src/markers_pcl_node.cpp.i:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.i
+.PHONY : src/markers_pcl_node.cpp.i
 
-src/point_cloud_generator.s: src/point_cloud_generator.cpp.s
+src/markers_pcl_node.s: src/markers_pcl_node.cpp.s
 
-.PHONY : src/point_cloud_generator.s
+.PHONY : src/markers_pcl_node.s
 
 # target to generate assembly for a file
-src/point_cloud_generator.cpp.s:
-	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/point_cloud_generator.cpp.s
-.PHONY : src/point_cloud_generator.cpp.s
+src/markers_pcl_node.cpp.s:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.s
+.PHONY : src/markers_pcl_node.cpp.s
 
 # Help Target
 help:
@@ -1481,12 +1454,9 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... marker_and_pointcloud_node_main"
-	@echo "... src/markers_node.o"
-	@echo "... src/markers_node.i"
-	@echo "... src/markers_node.s"
-	@echo "... src/point_cloud_generator.o"
-	@echo "... src/point_cloud_generator.i"
-	@echo "... src/point_cloud_generator.s"
+	@echo "... src/markers_pcl_node.o"
+	@echo "... src/markers_pcl_node.i"
+	@echo "... src/markers_pcl_node.s"
 .PHONY : help
 
 
