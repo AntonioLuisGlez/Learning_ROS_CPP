@@ -14,8 +14,9 @@
 RosPublishers::RosPublishers(std::shared_ptr<ros::NodeHandle> nh) : nh_(*nh)
 {
     // Inicializa los publicadores ROS
-    std::string marker_topic;
-    _nh.param<std::string>("marker_topic", marker_topic, "Marker_for_sensor1");
+    std::string marker_topic, pointcloud_topic;
+    nh_.param<std::string>("marker_topic", marker_topic, "marker_for_sensor1");
+
     marker_pub_      = nh_.advertise<visualization_msgs::Marker>(marker_topic, 1);
     point_cloud_pub_ = nh_.advertise<sensor_msgs::PointCloud2>("point_cloud_topic", 1);
 

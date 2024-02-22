@@ -1,0 +1,16 @@
+<launch>
+
+    <arg name="marker_topic" default="/marker_on_sensor1"/>
+    <arg name="trajectory_radius" default="10"/>
+    <!-- Añadir el resto de parametros para modificar -->
+
+    <include file="$(find learning_ros_cpp)/launch/tfs.launch" />
+
+    <node pkg="learning_ros_cpp" type="pkg_main" name="pkg_main" output="screen">
+      <param name="marker_topic" value="$(arg marker_topic)" />
+      <param name="radius" value="$(arg trajectory_radius)" />
+    </node>
+    
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find learning_ros_cpp)/config/Configuration.rviz" />
+
+</launch>
