@@ -2,7 +2,7 @@
 
 #include "learning_ros_cpp/ros_publishers.h"
 
-PkgNode::PkgNode() : nh_(std::make_shared<ros::NodeHandle>("~")), publisher_(std::make_unique<RosPublishers>(nh_)) {}
+PkgNode::PkgNode() : nh_(std::make_shared<ros::NodeHandle>("~")), subscriber_(std::make_unique<RosPublishers>(nh_)) {}
 
 void PkgNode::run()
 {
@@ -10,8 +10,6 @@ void PkgNode::run()
     ros::Rate rate(10);
     while (ros::ok()) {
         publisher_->publishMarker();
-        publisher_->publishPointCloud();
-        publisher_->publishCircularPath();
 
         rate.sleep();
     }

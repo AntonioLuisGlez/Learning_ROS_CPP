@@ -8,9 +8,9 @@
     <include file="$(find learning_ros_cpp)/launch/tfs.launch" />
 
     <!-- Creamos un nodo del paquete learning_ros_cpp con el ejecutable pkg_main y lo nombramos pkg_main. Mostramos la salida en la pantalla. -->
-    <node pkg="learning_ros_cpp" type="pkg_main" name="pkg_main" output="screen">
-        <param name="marker_topic" value="$(arg marker_topic)" />
-        <param name="radius" value="$(arg trajectory_radius)" />
+    <node pkg="communication_pkg" type="publisher_node.py" name="publisher_node">
+        <param name="odometry_topic" value="$(arg odometry_topic)"/>
+        <param name="orientation_topic" value="$(arg orientation_topic)"/>
     </node>
     
     <!-- Creamos un nodo del paquete rviz con el ejecutable rviz y lo nombramos rviz. Pasamos el argumento -d para especificar un archivo de configuración de rviz desde el paquete learning_ros_cpp -->

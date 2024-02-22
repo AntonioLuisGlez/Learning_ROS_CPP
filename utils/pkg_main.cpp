@@ -1,6 +1,6 @@
 #include <ros/ros.h>
 
-#include "learning_ros_cpp/pkg_node.h"
+#include "learning_ros_cpp/subscriber_node.h"
 
 int main(int argc, char** argv)
 {
