@@ -169,6 +169,7 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD
 utils/CMakeFiles/pkg_main.dir/rule:
 	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/pkg_main.dir/rule
 .PHONY : utils/CMakeFiles/pkg_main.dir/rule
@@ -209,6 +210,48 @@ pkg_main.s: pkg_main.cpp.s
 pkg_main.cpp.s:
 	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f utils/CMakeFiles/pkg_main.dir/build.make utils/CMakeFiles/pkg_main.dir/pkg_main.cpp.s
 .PHONY : pkg_main.cpp.s
+=======
+utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule:
+	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule
+.PHONY : utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule
+
+# Convenience name for target.
+marker_and_pointcloud_node_main: utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule
+
+.PHONY : marker_and_pointcloud_node_main
+
+# fast build rule for target.
+marker_and_pointcloud_node_main/fast:
+	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build
+.PHONY : marker_and_pointcloud_node_main/fast
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build && $(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/main.cpp.s
+.PHONY : main.cpp.s
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 
 # Help Target
 help:
@@ -223,10 +266,17 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+<<<<<<< HEAD
 	@echo "... pkg_main"
 	@echo "... pkg_main.o"
 	@echo "... pkg_main.i"
 	@echo "... pkg_main.s"
+=======
+	@echo "... marker_and_pointcloud_node_main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 .PHONY : help
 
 

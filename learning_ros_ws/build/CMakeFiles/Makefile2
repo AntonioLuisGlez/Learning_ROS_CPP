@@ -216,7 +216,11 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory utils
 
 # Recursive "all" directory target.
+<<<<<<< HEAD
 utils/all: utils/CMakeFiles/pkg_main.dir/all
+=======
+utils/all: utils/CMakeFiles/marker_and_pointcloud_node_main.dir/all
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 
 .PHONY : utils/all
 
@@ -226,7 +230,11 @@ utils/preinstall:
 .PHONY : utils/preinstall
 
 # Recursive "clean" directory target.
+<<<<<<< HEAD
 utils/clean: utils/CMakeFiles/pkg_main.dir/clean
+=======
+utils/clean: utils/CMakeFiles/marker_and_pointcloud_node_main.dir/clean
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 
 .PHONY : utils/clean
 
@@ -1151,12 +1159,20 @@ CMakeFiles/learning_ros_cpp.dir/all: CMakeFiles/pcl_msgs_generate_messages_py.di
 CMakeFiles/learning_ros_cpp.dir/all: CMakeFiles/std_srvs_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=9,10,11 "Built target learning_ros_cpp"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=9,10 "Built target learning_ros_cpp"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 .PHONY : CMakeFiles/learning_ros_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/learning_ros_cpp.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles 3
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles 2
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/learning_ros_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/learning_ros_cpp.dir/rule
@@ -2685,6 +2701,7 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for target utils/CMakeFiles/pkg_main.dir
 
 # All Build rule for target.
@@ -2710,6 +2727,33 @@ pkg_main: utils/CMakeFiles/pkg_main.dir/rule
 utils/CMakeFiles/pkg_main.dir/clean:
 	$(MAKE) -f utils/CMakeFiles/pkg_main.dir/build.make utils/CMakeFiles/pkg_main.dir/clean
 .PHONY : utils/CMakeFiles/pkg_main.dir/clean
+=======
+# Target rules for target utils/CMakeFiles/marker_and_pointcloud_node_main.dir
+
+# All Build rule for target.
+utils/CMakeFiles/marker_and_pointcloud_node_main.dir/all: CMakeFiles/learning_ros_cpp.dir/all
+	$(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/depend
+	$(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles --progress-num=11,12 "Built target marker_and_pointcloud_node_main"
+.PHONY : utils/CMakeFiles/marker_and_pointcloud_node_main.dir/all
+
+# Build rule for subdir invocation for target.
+utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 utils/CMakeFiles/marker_and_pointcloud_node_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles 0
+.PHONY : utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule
+
+# Convenience name for target.
+marker_and_pointcloud_node_main: utils/CMakeFiles/marker_and_pointcloud_node_main.dir/rule
+
+.PHONY : marker_and_pointcloud_node_main
+
+# clean rule for target.
+utils/CMakeFiles/marker_and_pointcloud_node_main.dir/clean:
+	$(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/clean
+.PHONY : utils/CMakeFiles/marker_and_pointcloud_node_main.dir/clean
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 
 #=============================================================================
 # Special targets to cleanup operation of make.

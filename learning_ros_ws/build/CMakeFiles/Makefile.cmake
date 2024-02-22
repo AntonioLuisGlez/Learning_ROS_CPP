@@ -389,5 +389,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+<<<<<<< HEAD
   "utils/CMakeFiles/pkg_main.dir/DependInfo.cmake"
+=======
+  "utils/CMakeFiles/marker_and_pointcloud_node_main.dir/DependInfo.cmake"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
   )

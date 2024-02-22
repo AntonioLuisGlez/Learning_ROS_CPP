@@ -1313,6 +1313,7 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named pkg_main
 
 # Build rule for target.
@@ -1378,6 +1379,46 @@ src/ros_publishers.s: src/ros_publishers.cpp.s
 src/ros_publishers.cpp.s:
 	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/ros_publishers.cpp.s
 .PHONY : src/ros_publishers.cpp.s
+=======
+# Target rules for targets named marker_and_pointcloud_node_main
+
+# Build rule for target.
+marker_and_pointcloud_node_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 marker_and_pointcloud_node_main
+.PHONY : marker_and_pointcloud_node_main
+
+# fast build rule for target.
+marker_and_pointcloud_node_main/fast:
+	$(MAKE) -f utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build.make utils/CMakeFiles/marker_and_pointcloud_node_main.dir/build
+.PHONY : marker_and_pointcloud_node_main/fast
+
+src/markers_pcl_node.o: src/markers_pcl_node.cpp.o
+
+.PHONY : src/markers_pcl_node.o
+
+# target to build an object file
+src/markers_pcl_node.cpp.o:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o
+.PHONY : src/markers_pcl_node.cpp.o
+
+src/markers_pcl_node.i: src/markers_pcl_node.cpp.i
+
+.PHONY : src/markers_pcl_node.i
+
+# target to preprocess a source file
+src/markers_pcl_node.cpp.i:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.i
+.PHONY : src/markers_pcl_node.cpp.i
+
+src/markers_pcl_node.s: src/markers_pcl_node.cpp.s
+
+.PHONY : src/markers_pcl_node.s
+
+# target to generate assembly for a file
+src/markers_pcl_node.cpp.s:
+	$(MAKE) -f CMakeFiles/learning_ros_cpp.dir/build.make CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.s
+.PHONY : src/markers_pcl_node.cpp.s
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 
 # Help Target
 help:
@@ -1480,6 +1521,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+<<<<<<< HEAD
 	@echo "... pkg_main"
 	@echo "... src/pkg_node.o"
 	@echo "... src/pkg_node.i"
@@ -1487,6 +1529,12 @@ help:
 	@echo "... src/ros_publishers.o"
 	@echo "... src/ros_publishers.i"
 	@echo "... src/ros_publishers.s"
+=======
+	@echo "... marker_and_pointcloud_node_main"
+	@echo "... src/markers_pcl_node.o"
+	@echo "... src/markers_pcl_node.i"
+	@echo "... src/markers_pcl_node.s"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
 .PHONY : help
 
 

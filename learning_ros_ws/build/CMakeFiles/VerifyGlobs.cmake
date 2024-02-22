@@ -4,8 +4,12 @@
 # HDRS_FILES at CMakeLists.txt:24 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/*.h")
 set(OLD_GLOB
+<<<<<<< HEAD
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/pkg_node.h"
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/ros_publishers.h"
+=======
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/include/learning_ros_cpp/markers_pcl_node.h"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -15,8 +19,12 @@ endif()
 # SRCS_FILES at CMakeLists.txt:25 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/*.cpp")
 set(OLD_GLOB
+<<<<<<< HEAD
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/pkg_node.cpp"
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/ros_publishers.cpp"
+=======
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

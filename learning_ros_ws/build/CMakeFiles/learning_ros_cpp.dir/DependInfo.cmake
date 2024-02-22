@@ -4,8 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< HEAD
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/pkg_node.cpp" "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles/learning_ros_cpp.dir/src/pkg_node.cpp.o"
   "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/ros_publishers.cpp" "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles/learning_ros_cpp.dir/src/ros_publishers.cpp.o"
+=======
+  "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/src/src/markers_pcl_node.cpp" "/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/CMakeFiles/learning_ros_cpp.dir/src/markers_pcl_node.cpp.o"
+>>>>>>> 0304defc938607e09147b945225093d8c6e275b5
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
