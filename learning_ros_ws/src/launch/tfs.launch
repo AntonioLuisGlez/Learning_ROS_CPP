@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom" args="2 2 2 0 0 0 map odom"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="sensor1_to_base_link" args="1 1 0 0 0 0 1 base_link sensor1_frame"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="sensor2_to_base_link" args="1 -1 0 0 0 0 1 base_link sensor2_frame"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="sensor3_to_base_link" args="-1 1 0 0 0 0 1 base_link sensor3_frame"/>
+</launch>

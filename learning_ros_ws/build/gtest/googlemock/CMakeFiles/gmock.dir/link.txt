@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -std=c++17 -Wall -Wcast-align -pedantic -Wextra -Wno-long-long -g  -O0 -DDEBUG -D_DEBUG  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/algonzalez/Desktop/Learning_ROS_CPP/learning_ros_ws/build/gtest/lib ../lib/libgtestd.so -lpthread 
