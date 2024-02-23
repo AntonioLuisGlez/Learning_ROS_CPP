@@ -10,9 +10,15 @@ class PublisherNode:
     def __init__(self):
         rospy.init_node('publisher_node', anonymous=True)
 
-        self.odom_publisher = rospy.Publisher('odom', Odometry, queue_size=10)
+        odometry_topic = rospy.get_param(
+            '~odometry_topic', default="/odometry")
+        orientation_topic = rospy.get_param(
+            '~orientation_topic', default="/orientation")
+
+        self.odom_publisher = rospy.Publisher(
+            odometry_topic, Odometry, queue_size=1)
         self.quaternion_publisher = rospy.Publisher(
-            'orientation', Quaternion, queue_size=10)
+            orientation_topic, Quaternion, queue_size=1)
 
         self.odom_timer = rospy.Timer(
             rospy.Duration(0.01), self.publish_odom)  # 100 Hz
@@ -35,8 +41,15 @@ class PublisherNode:
             self.current_angle -= 360
 
         # Genera un cuaternión para una rotación de 15 grados alrededor del eje Z
-        quaternion_msg = quaternion_about_axis(
+        quaternion = quaternion_about_axis(
             self.current_angle * 0.0174533, (0, 0, 1))
+
+        # Desempaqueta el cuaternión y asígnalo al mensaje Quaternion
+        quaternion_msg.x = quaternion[0]
+        quaternion_msg.y = quaternion[1]
+        quaternion_msg.z = quaternion[2]
+        quaternion_msg.w = quaternion[3]
+
         self.quaternion_publisher.publish(quaternion_msg)
 
 
