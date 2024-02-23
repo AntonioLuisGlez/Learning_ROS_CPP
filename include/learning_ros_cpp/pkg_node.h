@@ -12,6 +12,9 @@ class PkgNode
     void run();
 
   private:
+    void odometryThread(float rate);
+
+  private:
     std::shared_ptr<ros::NodeHandle> nh_;
     std::unique_ptr<RosSubscribers>  subscriber_;
 };

@@ -8,6 +8,8 @@ class RosSubscribers
   public:
     RosSubscribers(const std::shared_ptr<ros::NodeHandle>& nh);
 
+    nav_msgs::Odometry getOdometry();
+
   private:
     void odom_callback(const nav_msgs::Odometry::ConstPtr& msg);
     void quaternion_callback(const geometry_msgs::Quaternion::ConstPtr& msg);
@@ -17,4 +19,6 @@ class RosSubscribers
 
     ros::Subscriber _odometry_sub;
     ros::Subscriber _orientation_sub;
+
+    nav_msgs::Odometry _received_odometry;
 };

@@ -27,9 +27,14 @@ class PublisherNode:
 
         self.current_angle = 0
 
+    # TODO: Instead of publish nav_msgs/Oodmetry -> geometry_msgs/Point
     def publish_odom(self, event):
         odom_msg = Odometry()
         odom_msg.header.stamp = rospy.Time.now()
+
+        # TODO: Fill position with x,y,z from a circular trajectory
+
+        odom_msg.pose.pose.orientation.w = 1.0
         # Deja la orientación vacía
         self.odom_publisher.publish(odom_msg)
 
